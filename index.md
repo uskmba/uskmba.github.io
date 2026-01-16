@@ -1,8 +1,16 @@
 ---
 layout: default
-title: Home
+title: About Me
 ---
 
-# Welcome to Unsoo's Homepage
+# About Me
 
-This is where I'll be sharing updates on my projects and interests. Stay tuned!
+Welcome to my academic portfolio.
+
+I am a passionate developer and researcher.  
+Here you will find my research, publications, and paper reviews.
+
+## Quick Links
+- [Research](/research)
+- [Publications](/publications)
+- [CV](/cv)
