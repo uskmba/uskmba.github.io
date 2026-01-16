@@ -3,14 +3,24 @@ layout: default
 title: About Me
 ---
 
-# About Me
-
-Welcome to my academic portfolio.
-
-I am a passionate developer and researcher.  
-Here you will find my research, publications, and paper reviews.
-
-## Quick Links
-- [Research](/research)
-- [Publications](/publications)
-- [CV](/cv)
+<div class="profile-container">
+    <div class="profile-text">
+        <h1>About Me</h1>
+        <p>Welcome to my academic portfolio.</p>
+        <p>I am a passionate developer and researcher. My work focuses on...</p>
+        <ul>
+            <li>Current Focus: Nanomaterials</li>
+            <li>Carbon Nanotubes (CNT)</li>
+            <li>Graphene Applications</li>
+        </ul>
+        <h3>Quick Links</h3>
+        <p>
+            <a href="{{ '/research' | relative_url }}">Research</a> | 
+            <a href="{{ '/publications' | relative_url }}">Publications</a> | 
+            <a href="{{ '/cv' | relative_url }}">CV</a>
+        </p>
+    </div>
+    <div class="profile-image">
+        <img src="https://via.placeholder.com/300" alt="Profile Photo">
+    </div>
+</div>

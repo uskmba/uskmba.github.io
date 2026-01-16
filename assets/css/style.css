@@ -75,15 +75,27 @@ a:hover {
     min-height: 80vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #fff;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
-h1 { font-size: 2.2rem; border-bottom: 1px solid #333; padding-bottom: 10px; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.4rem; }
+h1 {
+    font-size: 2.2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
 
 img {
     max-width: 100%;
@@ -110,4 +122,31 @@ img {
     text-align: center;
     color: var(--footer-text);
     font-size: 0.9rem;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-text {
+    flex: 2;
+}
+
+.profile-image {
+    flex: 1;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column-reverse;
+    }
 }

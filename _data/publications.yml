@@ -1,6 +1,6 @@
-- title: "High-Performance Carbon Nanotube Transistors"
-  description: "A study on improving the mobility of CNT transistors using novel dielectric materials."
-  thumbnail: "https://via.placeholder.com/150"
+- title: "Nanofluidic Transport in CNTs"
+  description: "Investigating the transport of water and ions through carbon nanotubes, focusing on entrance effects and confinement."
+  thumbnail: "/assets/images/cnt-transport.png"
   link: "#"
 
 - title: "Graphene Membranes for Water Desalination"
