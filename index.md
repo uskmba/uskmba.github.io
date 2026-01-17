@@ -21,6 +21,6 @@ title: About Me
         </p>
     </div>
     <div class="profile-image">
-        <img src="https://via.placeholder.com/300" alt="Profile Photo">
+        <img src="{{ '/assets/images/profile_jeju.jpg' | relative_url }}" alt="Profile Photo">
     </div>
 </div>
