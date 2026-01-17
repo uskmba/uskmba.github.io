@@ -6,8 +6,8 @@ title: Research
 # Research Interests
 
 ## Current Focus
-*   Nanomaterials
+*   Nanofluidics
 *   Carbon Nanotubes (CNT)
-*   Graphene Applications
+*   Nanoporoous Graphene Membrane
 
 *(Content to be updated)*

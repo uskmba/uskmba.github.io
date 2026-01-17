@@ -9,9 +9,9 @@ title: About Me
         <p>Welcome to my academic portfolio.</p>
         <p>I am a passionate developer and researcher. My work focuses on...</p>
         <ul>
-            <li>Current Focus: Nanomaterials</li>
+            <li>Nanofluidics</li>
             <li>Carbon Nanotubes (CNT)</li>
-            <li>Graphene Applications</li>
+            <li>Nanoporous Graphene Membrane</li>
         </ul>
         <h3>Quick Links</h3>
         <p>
