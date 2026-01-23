@@ -8,6 +8,6 @@ title: Research
 ## Current Focus
 *   Nanofluidics
 *   Carbon Nanotubes (CNT)
-*   Nanoporoous Graphene Membrane
+*   Nanoporoous Atomically Thin Membrane
 
 *(Content to be updated)*
