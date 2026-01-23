@@ -6,8 +6,8 @@ title: CV
 # Curriculum Vitae
 
 ## Education
-*   **Ph.D.** in Related Field, University Name (Year)
-*   **B.S.** in Related Field, University Name (Year)
+*   **M.S.** Mechanical Engineering, Pohang University of Science and Technology (2024-)
+*   **B.S.** Mechanical Engineering, Pusan National University, Republic of Korea (2024)
 
 ## Experience
 *   **Position**, Company/Institution (Year - Present)

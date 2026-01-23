@@ -5,13 +5,13 @@ title: About Me
 
 <div class="profile-container">
     <div class="profile-text">
-        <h1>About Me</h1>
-        <p>Welcome to my academic portfolio.</p>
+        <h1>Welcome!</h1>
+        <p>MS student @ Pohang University of Science and Technology (POSTECH) </p>
         <p>I am a passionate developer and researcher. My work focuses on...</p>
         <ul>
             <li>Nanofluidics</li>
             <li>Carbon Nanotubes (CNT)</li>
-            <li>Nanoporous Graphene Membrane</li>
+            <li>Nanoporous Atomically Thin Membrane</li>
         </ul>
         <h3>Quick Links</h3>
         <p>

@@ -7,6 +7,6 @@ title: Contact
 
 Feel free to reach out to me.
 
-*   **Email**: email@example.com
+*   **Email**: unsookang@postech.ac.kr
 *   **LinkedIn**: [Profile Link](#)
 *   **GitHub**: [uskmba](https://github.com/uskmba)
