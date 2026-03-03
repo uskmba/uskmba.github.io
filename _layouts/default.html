@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,13 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        const storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        if (storedTheme)
+            document.documentElement.setAttribute('data-theme', storedTheme)
+    </script>
 </head>
+
 <body>
 
     <header class="site-header">
@@ -20,6 +27,10 @@
                 <a href="{{ '/paper-review' | relative_url }}" class="page-link">Paper Reviews</a>
                 <a href="{{ '/cv' | relative_url }}" class="page-link">CV</a>
                 <a href="{{ '/contact' | relative_url }}" class="page-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <span class="icon-moon">🌙</span>
+                    <span class="icon-sun" style="display:none;">☀️</span>
+                </button>
             </nav>
         </div>
     </header>
@@ -36,5 +47,41 @@
         </div>
     </footer>
 
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const iconMoon = document.querySelector('.icon-moon');
+        const iconSun = document.querySelector('.icon-sun');
+
+        // Function to update the icons based on the current theme
+        const updateIcons = (theme) => {
+            if (theme === 'light') {
+                iconMoon.style.display = 'none';
+                iconSun.style.display = 'inline';
+            } else {
+                iconMoon.style.display = 'inline';
+                iconSun.style.display = 'none';
+            }
+        };
+
+        // Initialize icons on page load
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        updateIcons(currentTheme);
+
+        // Toggle functionality
+        themeToggle.addEventListener('click', () => {
+            let targetTheme = 'light';
+            let currentTheme = document.documentElement.getAttribute("data-theme");
+
+            if (currentTheme === "light") {
+                targetTheme = "dark";
+            }
+
+            document.documentElement.setAttribute('data-theme', targetTheme)
+            localStorage.setItem('theme', targetTheme);
+            updateIcons(targetTheme);
+        });
+    </script>
+
 </body>
+
 </html>
