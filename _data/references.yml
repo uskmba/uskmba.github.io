@@ -1,0 +1,19 @@
+pascal2011entropy:
+  authors: "Pascal, T. A., Goddard, W. A., & Jung, Y."
+  title: "Entropy and the driving force for the filling of carbon nanotubes with water"
+  journal: "Proceedings of the National Academy of Sciences"
+  volume: "108"
+  number: "29"
+  pages: "11794-11798"
+  year: "2011"
+  doi: "https://doi.org/10.1073/pnas.1108073108"
+
+hummer2001water:
+  authors: "Hummer, G., Rasaiah, J. C., & Noworyta, J. P."
+  title: "Water conduction through the hydrophobic channel of a carbon nanotube"
+  journal: "Nature"
+  volume: "414"
+  number: "6860"
+  pages: "188-190"
+  year: "2001"
+  doi: "https://doi.org/10.1038/35102535"

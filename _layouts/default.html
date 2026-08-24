@@ -80,6 +80,48 @@
             localStorage.setItem('theme', targetTheme);
             updateIcons(targetTheme);
         });
+
+        window.SITE_REFERENCES = {{ site.data.references | jsonify }};
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const citeRefs = document.querySelectorAll('.cite-ref');
+            if (citeRefs.length === 0) return;
+
+            const citedKeys = [];
+            const keyToNum = {};
+
+            citeRefs.forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (!keyToNum[key]) {
+                    citedKeys.push(key);
+                    keyToNum[key] = citedKeys.length;
+                }
+                const num = keyToNum[key];
+                el.innerHTML = `<sup><a href="#ref-${num}" id="cite-link-${num}">[${num}]</a></sup>`;
+            });
+
+            const mainWrapper = document.querySelector('.page-content .wrapper');
+            if (mainWrapper && citedKeys.length > 0) {
+                const refSection = document.createElement('div');
+                refSection.className = 'references-section';
+                refSection.innerHTML = `
+                    <hr style="margin-top: 40px; border: 0; border-top: 1px solid var(--pub-bg);">
+                    <h2>References</h2>
+                    <ol class="references-list" style="padding-left: 20px;">
+                        ${citedKeys.map(key => {
+                            const num = keyToNum[key];
+                            const ref = window.SITE_REFERENCES ? window.SITE_REFERENCES[key] : null;
+                            if (!ref) return `<li id="ref-${num}">[${key}] Reference details missing.</li>`;
+                            const doiHtml = ref.doi ? ` <a href="${ref.doi}" target="_blank" rel="noopener">[DOI]</a>` : '';
+                            return `<li id="ref-${num}" style="margin-bottom: 8px;">
+                                ${ref.authors} (${ref.year}). "${ref.title}". <em>${ref.journal}</em>, ${ref.volume}${ref.number ? '(' + ref.number + ')' : ''}, ${ref.pages}.${doiHtml}
+                            </li>`;
+                        }).join('')}
+                    </ol>
+                `;
+                mainWrapper.appendChild(refSection);
+            }
+        });
     </script>
 
 </body>
