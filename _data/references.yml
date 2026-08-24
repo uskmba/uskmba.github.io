@@ -17,3 +17,13 @@ hummer2001water:
   pages: "188-190"
   year: "2001"
   doi: "https://doi.org/10.1038/35102535"
+
+
+holt2006fast:
+  authors: "Holt, Jason K and Park, Hyung Gyu and Wang, Yinmin and Stadermann, Michael and Artyukhin, Alexander B and Grigoropoulos, Costas P and Noy, Aleksandr and Bakajin, Olgica"
+  title: "Fast mass transport through sub-2-nanometer carbon nanotubes"
+  journal: "science"
+  volume: "312"
+  number: "5776"
+  pages: "1034--1037"
+  year: "2006" 
