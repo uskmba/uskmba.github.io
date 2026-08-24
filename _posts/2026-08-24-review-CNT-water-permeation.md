@@ -23,4 +23,4 @@ In 1990's, Whether water molecules could penetrate into a super confined space w
  However, with Molecular Dynamics (MD) simulation, Hummer et al. {% include cite.html id="hummer2001water" %} predicted that water molecules can voluntarily move inside sub-nanometer carbon nanotubes, forming single-file water chains.
 
 Later studies provided deeper thermodynamic explanations for this phenomenon. Notably, Pascal et al. {% include cite.html id="pascal2011entropy" %} (*Entropy and the driving force for the filling of carbon nanotubes with water*) demonstrated that the gain in translational and rotational entropy of confined water molecules compensates for the loss of hydrogen bonds, serving as a primary thermodynamic driver for spontaneous CNT filling.
-
+

@@ -5,6 +5,10 @@ title: Research
 
 # Research Interests
 
+## Past studies
+*   Microrobot control
+*   Mechanism design 
+
 ## Current Focus
 *   Nanofluidics
 *   Carbon Nanotubes (CNT)
